@@ -15,18 +15,15 @@ body {
   text-align: center;
 }
 
-h1 {
-  color: #fff;
-  margin-bottom: 0.5rem;
-  font-size: 1.75rem;
-  text-align: center;
+.logo {
+  height: 8rem;
 }
 
 .todoWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20% auto;
+  margin: 2rem auto;
   width: 90%;
   background: #1a1a40;
   padding: 2rem;
@@ -109,5 +106,26 @@ h1 {
 @media (min-width: 385px) and (max-width: 1024px) {
   .todo p {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1536px) {
+  .todo-input {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .todo-btn {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .todo p {
+    font-size: 1.2rem;
+  }
+
+  .fa-trash,
+  .fa-pen-to-square {
+    font-size: 1.2rem;
   }
 }

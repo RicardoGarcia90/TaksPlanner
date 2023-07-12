@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../assets/img/TaskPlanner.svg';
 import { v4 as uuidv4 } from 'uuid';
 uuidv4();
 
@@ -48,7 +49,7 @@ const TodoWrapper = () => {
 
   return (
     <div className="todoWrapper">
-      <h1>Tarefas</h1>
+      <img className="logo" src={logo} alt="Logo TaskPlanner" />
       <TodoForm onAddTodo={addTodo} />
       {todos.map((todo, index) =>
         todo.isEditing ? (
