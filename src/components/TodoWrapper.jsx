@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logo from '../assets/img/TaskPlanner.svg';
 import { v4 as uuidv4 } from 'uuid';
 uuidv4();
@@ -53,7 +53,7 @@ const TodoWrapper = () => {
       <TodoForm onAddTodo={addTodo} />
       {todos.map((todo, index) =>
         todo.isEditing ? (
-          <EditTodoForm editTodo={editTask} task={todo} />
+          <EditTodoForm editTodo={editTask} task={todo} key={index} />
         ) : (
           <Todo
             task={todo}
